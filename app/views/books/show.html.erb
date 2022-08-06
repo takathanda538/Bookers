@@ -1,0 +1,17 @@
+<body>
+  <p id="notice"></p>
+  
+  <p>
+    <strong>Title:</strong>
+    <%= @book.title%>
+  </p>
+  <p>
+    <strong>Body:</strong>
+    <%= @book.body%>
+  </p>
+  
+  <%= link_to "Edit","/books/#{@book.id}/edit" %>
+  <%= link_to "Back",:back %>
+  
+</body>
+  
